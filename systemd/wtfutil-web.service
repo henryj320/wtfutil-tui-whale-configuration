@@ -1,0 +1,14 @@
+[Unit]
+Description=Wtfutil Browser Dashboard via ttyd
+After=network.target
+
+[Service]
+Type=simple
+User=software
+ExecStart=/usr/local/bin/ttyd -p 7681 -t 'theme={"background":"#212124","foreground":"#ffffff","cursor":"#bdbdbd"}' -r /usr/local/bin/wtfutil
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
