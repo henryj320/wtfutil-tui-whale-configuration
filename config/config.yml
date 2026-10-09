@@ -1,0 +1,91 @@
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+
+  grid:
+    columns: [50, 50]
+    rows: [12, 12, 6]
+
+  refreshInterval: 1
+
+  mods:
+    resourceusage:
+      cpuCombined: false
+      enabled: true
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 1s
+      showCPU: true
+      showMem: true
+      showSwp: true
+
+    system-info:
+      title: "System Info"
+      type: "cmdrunner"
+      cmd: "/home/software/non-repositories/wtfutil/system-info.sh"
+      args: []
+      enabled: true
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 60
+
+    storage-used-clean:
+      title: "Storage"
+      type: "cmdrunner"
+      cmd: "/home/software/non-repositories/wtfutil/storage-used.sh"
+      args: []
+      enabled: true
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 300
+
+    watchyourlan-status:
+      title: "Watchyourlan"
+      type: "cmdrunner"
+      cmd: "/home/software/non-repositories/wtfutil/watchyourlan-status.py"
+      args: []
+      enabled: true
+      position:
+        top: 0
+        left: 3
+        height: 3
+        width: 1
+      refreshInterval: 15
+
+    tailscale-status:
+      title: "Tailscale"
+      type: "cmdrunner"
+      cmd: "/home/software/non-repositories/wtfutil/tailscale-status.py"
+      args: []
+      enabled: true
+      position:
+        top: 1
+        left: 0
+        height: 2
+        width: 1
+      refreshInterval: 15
+
+    ente-status:
+      title: "Ente Photos"
+      type: "cmdrunner"
+      cmd: "/home/software/non-repositories/wtfutil/ente-status.sh"
+      args: []
+      enabled: true
+      position:
+        top: 1
+        left: 1
+        height: 2
+        width: 1
+      refreshInterval: 60
