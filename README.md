@@ -37,7 +37,7 @@ This README assumes that you are using Linux with Systemd. If you are not, you m
 
 4. Create a new Systemd service with ` sudo vi /etc/systemd/system/wtfutil-web.service `.
 
-5. Paste [wtfutil-web.service](systemd/wtfutil-wen.service).
+5. Paste [wtfutil-web.service](systemd/wtfutil-web.service).
 
 6. Start the service with:
 
@@ -49,7 +49,7 @@ This README assumes that you are using Linux with Systemd. If you are not, you m
     sudo systemctl status -l wtfutil-web.service
     ```
 
-7. Check that you can acccess the TUI at http://<your-ip>:7681
+7. Check that you can acccess the TUI at ` http://<your-ip>:7681 `
 
 ### Customising the Config
 
@@ -59,5 +59,5 @@ Every time you write changes to the config file, Wtfutil should automatically re
 
 ### Custom Widgets
 
-You can use any custom script within Wtfutil. You can see examples of this within my [config.yml](config/config.ym).
+You can use any custom script within Wtfutil. You can see examples of this within my [config.yml](config/config.yml).
 
